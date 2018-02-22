@@ -103,6 +103,7 @@ describe('arrays', () => {
       const arr = [1, 2, 3, 4, 5];
       const results = arrayMethods.flatten(arr);
       expect(Array.isArray(results)).toBe(true);
+      expect(results).toEqual([1, 2, 3, 4, 5]);
     });
     it('should return a flattened array when given a nested array', () => {
       const arr = [1, 2, 3, 4, 5, [6], [7]];
